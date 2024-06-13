@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<!--мета-теги-->
+<head>
+<meta charset="UTF-8">
+<meta name="theme-color" content="#50a2de">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Рецепты блюд</title>
+<link rel="stylesheet" href="style.css">
+<meta name="author" content="Leon">
+<meta name="description" content="Посмотрите простые и вкусные способы приготовления пищи">
+<meta name="keywords" content="Рецепты,еда,вкусно">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>  
+  <script type="text/javascript">
+  $(function() {
+  $(window).scroll(function() {
+  if($(this).scrollTop() != 0) {
+  $('#topNubex').fadeIn();
+  } else {
+  $('#topNubex').fadeOut();
+  }
+  });
+  $('#topNubex').click(function() {
+  $('body,html').animate({scrollTop:0},700);
+  });
+  });
+  </script>
+</head>
+<body>
+<header>
+<h1><em>Простые рецепты</em></h1>
+</header>
+<button id="themeToggle">Смена темы</button> 
+   <!--уведомление о Куки-->
+<div class="warning warning--active">
+  <div class="warning__text">На этом веб-сайте используются cookie.</div>
+  <button class="warning__apply" type="button">OK</button>
+  <a class="warning__read" href="https://ru.wikipedia.org/wiki/Cookie" target="_blank">Читать полностью</a>
+  
+</div><div id="nav-icon3" class="pushmenu">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+<nav class="sidebar">
+	<div class="text d-flex p-2">
+		<h4>МЕНЮ САЙТА</h4>
+		<div id="nav-icon3" class="pushmenu opened">
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		  <span></span>
+		</div>	
+	</div>
+	<div class="menu-main-menu-container">
+<ul id="menu-main-menu">
+	<li class="current-menu-item"><a href="#" >Главная</a></li>	
+	<li><a href="#form">Подписаться на рассылку</a></li>
+	<li><a href="#contacts">Контакты</a></li>
+</ul>
+	</div>
+</nav>    
+<div class="hidden-overley"></div>
+<!--навигация по сайту-->
+<nav>
+<ul>
+<li><a href="#pancake">Рецепт панкейка</a></li>
+<li><a href="#pancakes">Рецепт блинов</a></li>
+</ul>
+</nav>
+<!--основной контент-->
+<main>
+<section id="pancake"><!--секция панкейка-->
+<h2>Панкейк</h2>
+<img src="https://static.1000.menu/img/content-v2/26/03/13358/pankeiki-na-kefire-pyshnye_1613548934_18_max.jpg" alt="Фотография панкейка">
+<ul>
+ <details>
+  <summary>Состав/Ингредиенты (Порции: 3)</summary>
+<li>Кефир (густой): 0.5 л.</li>
+<li>Яйца (отборной категории): 2 шт.</li>
+<li>Пшеничная мука (может уйти больше или меньше): 300 гр.</li>
+<li>Сахар: 2 ст.ложки</li>
+<li>Сливочное масло: 70 гр.</li>
+<li>Сода: 1 чайн.ложка</li>
+<li>Соль: 0.5 чайн.ложки</li>
+ </details>
+</ul>
+<b>Пошаговое приготовление<br>(Время приготовления: 30мин.)</b>
+<div>
+<i>Шаг 1</i>
+<img src="https://static.1000.menu/img/content-v2/26/03/13358/pankeiki-na-kefire_1587716836_1_max.jpg" alt="Ингридиенты">
+<p>Как сделать панкейки на кефире? Подготовьте продукты. Кефир лучше взять пожирнее, он более густой. Для более жидкого кефира потребуется больше муки, и панкейки могут стать "резиновыми". Чем кислее будет кефир, тем пышнее получатся панкейки, так как реакция между содой и кислотой будет сильнее. Поэтому отлично подойдет старый, уже прокисший кефир. Вместо кефира можете взять натуральный йогурт без добавок.</p>
+</div>
+<div>
+<i>Шаг 2</i>
+<img src="https://static.1000.menu/img/content-v2/26/03/13358/pankeiki-na-kefire_1587716836_2_max.jpg" alt="Кефир в ковше">
+<p>Кефир налейте в ковш и слегка подогрейте. Делайте это на небольшом огне, при постоянном помешивании, чтобы он не свернулся. Всыпьте в кефир соду и перемешайте венчиком. За счет того, что кефир теплый и кислый, начнется бурная реакция между содой и кислотой. Масса сразу запузырится и увеличится в объеме. именно благодаря этому панкейки приобретут свою пышность.</p>
+</div>
+<div>
+<i>Шаг 3</i>
+<img src="https://static.1000.menu/img/content-v2/26/03/13358/pankeiki-na-kefire_1587716836_3_max.jpg" alt="Размешанные яйца в миске">
+<p>Яйца разбейте в другую миску. Добавьте к ним сахар и соль. Слегка взбейте яйца венчиком или вилкой. Не надо их взбивать до пены, просто размешайте. Пышность в этом рецепте достигается не за счет взбитых яиц. Яйца вымойте в теплой воде с содой, так как на их поверхности могут быть вредные бактерии.</p>
+</div>
+<div>
+<i>Шаг 4</i>
+<img src="https://static.1000.menu/img/content-v2/26/03/13358/pankeiki-na-kefire_1587716836_4_max.jpg" alt="Просеянная мука">
+<p>Муку просейте в большую миску. Просеивание обогащает муку воздухом, что делает выпечку более пышной.</p>
+</div>
+<div>
+<i>Шаг 5</i>
+<img src="https://static.1000.menu/img/content-v2/26/03/13358/pankeiki-na-kefire_1587716836_5_max.jpg" alt="Яично-кефирная смесь">
+<p>Влейте яичную смесь к кефирной. Аккуратно перемешайте.</p>
+</div>
+<div>
+<i>Шаг 6</i>
+<img src="https://static.1000.menu/img/content-v2/26/03/13358/pankeiki-na-kefire_1587716836_6_max.jpg" alt="Тесто">
+<p>Влейте жидкие ингредиенты в муку тонкой струйкой, при постоянном размешивании венчиком. Если сделать наоборот, всыпать муку в кефир, то в тесте образуются комочки. А так комочков удастся избежать. Размешайте тесто до однородного состояния. Не переусердствуйте с размешиванием, как только вся мука равномерно распределится, остановитесь. Пусть в тесте останется как можно больше воздуха. Возможно муки понадобится чуть меньше или больше.</p>
+</div>
+<div>
+<i>Шаг 7</i>
+<img src="https://static.1000.menu/img/content-v2/26/03/13358/pankeiki-na-kefire_1587716836_7_max.jpg" alt="Расстопленние масло">
+<p>Растопите в сотейнике сливочное масло. Делайте это на небольшом огне. Следите, чтобы масло не начало кипеть, от него может отделиться сыворотка. Можете не ждать когда растопится весь кусок, а снимать с огня. От тепла остатки масла все равно растают.</p>
+</div>
+<div>
+<i>Шаг 8</i>
+<img src="https://static.1000.menu/img/content-v2/26/03/13358/pankeiki-na-kefire_1587716836_8_max.jpg" alt="Тесто">
+<p>Растопленное масло остудите, а затем влейте в тесто. Хорошо размешайте тесто венчиком, чтобы все масло перемешалось. Сливочное масло придаст панкейкам очень приятный слегка ореховый аромат. Тесто будет по консистенции как густая сметана. Если тесто получилось слишком жидким, то вмешайте в него ещё немного муки, если слишком густым, то добавьте немного кефира.</p>
+</div>
+<div>
+<i>Шаг 9</i>
+<img src="https://static.1000.menu/img/content-v2/26/03/13358/pankeiki-na-kefire_1587716836_9_max.jpg" alt="Блин на сковороде">
+<p>На среднем огне разогрейте сковороду. Лучше всего взять специальную блинную с антипригарным покрытием. Если такой нет, то возьмите чугунную или любую, к которой не прилипают блины. Это важно, потому что жарить панкейки надо без масла. Если вы не уверены в своей сковороде, то перед первым блином смажьте ее тонким слоем растительного масла. Выкладывайте тесто на сковороду ложкой, формируя ровный блин среднего размера.</p>
+</div>
+<div>
+<i>Шаг 10</i>
+<img src="https://static.1000.menu/img/content-v2/26/03/13358/pankeiki-na-kefire_1587716836_10_max.jpg" alt="Блин на сковороде">
+<p>Жарьте панкейк на среднем огне до появления пузырей на поверхности</p>
+</div>
+<div>
+<i>Шаг 11</i>
+<img src="https://static.1000.menu/img/content-v2/26/03/13358/pankeiki-na-kefire_1587716836_11_max.jpg" alt="Блин на сковороде">
+<p>Переверните блин на другую сторону. Жарьте его до готовности с другой стороны. Таким образом пожарьте все панкейки. Если панкейки получаются не очень пышными, то можно добавить в тесто ещё немного муки. Традиционно их делают размером с блюдце. Готовые панкейки складывают один на другой, а сверху кладут масло. Едят панкейки, отрезая сразу всю стопку, наподобие куска торта.</p>
+</div>
+</section>
+<section id="pancakes"><!--секция блинов-->
+<h2>Постные блины на минералке</h2>
+<img src="https://static.1000.menu/img/content-v2/55/f3/9713/postnye-bliny-na-mineralke_1712492839_19_h3l2z7o_max.jpg" alt="Стопка блинов">
+<ul>
+ <details>
+  <summary>Состав/Ингредиенты (Порции:4)</summary>
+<li>Минеральная вода (сильногазированная): 400 мл.</li>
+<li>Пшеничная мука: 200 гр.</li> 
+<li>Растительное масло: 3 ст.л</li>
+<li>Сахар (с горкой): 1 ст.л</li>
+<li>Соль: 0.5 чайн.л.</li>
+</details>
+</ul>
+<div>
+<i>Шаг 1</i>
+<img src="https://static.1000.menu/img/content-v2/55/f3/9713/postnye-bliny-na-mineralke_1712492791_1_azmftrm_max.jpg" alt="">
+<p>Как испечь тонкие постные блины без яиц на минералке? Очень просто! Тесто замешивается за несколько минут. Для начала подготовьте необходимые ингредиенты по списку. Муку берите высшего сорта. Минеральную воду берите сильногазированную, ведь именно пузырьки будут делать тесто воздушным. Растительное масло берите любое.</p>
+</div>
+<div>
+<i>Шаг 2</i>
+<img src="https://static.1000.menu/img/content-v2/55/f3/9713/postnye-bliny-na-mineralke_1712492794_2_dq2a6o9_max.jpg" alt="">
+<p>Муку просейте через сито в миску. Всыпьте сахар и соль и перемешайте.</p>
+</div>
+<div>
+<i>Шаг 3</i>
+<img src="https://static.1000.menu/img/content-v2/55/f3/9713/postnye-bliny-na-mineralke_1712492798_3_evkhj7s_max.jpg" alt="">
+<p>Влейте в муку половину газированной воды и перемешайте тесто венчиком до однородности. Затем частями влейте оставшуюся воду. Воды на такое количество муки может понадобиться больше или меньше. Смотрите по консистенции после добавления растительного масла. Тесто получится слегка вязкое - так и нужно. При желании можете добавить в тесто еще немного сахара.</p>
+</div>
+<div>
+<i>Шаг 4</i>
+<img src="https://static.1000.menu/img/content-v2/55/f3/9713/postnye-bliny-na-mineralke_1712492801_4_ck4wu8o_max.jpg" alt="">
+<p>Влейте растительное масло и тщательно размешайте венчиком.</p>
+</div>
+<div>
+<i>Шаг 5</i>
+<img src="https://static.1000.menu/img/content-v2/55/f3/9713/postnye-bliny-na-mineralke_1712492805_5_6igabil_max.jpg" alt="">
+<p>Оставьте тесто на 5-10 минут при комнатной температуре. За это время оно слегка загустеет, потому что из муки выделится клейковина. Если тесто сильно загустело, добавьте еще минеральной воды. Готовое тесто должно получиться текучее и однородное.</p>
+</div>
+<div>
+<i>Шаг 6</i>
+<img src="https://static.1000.menu/img/content-v2/55/f3/9713/postnye-bliny-na-mineralke_1712492806_6_r0f1dzy_max.jpg" alt="">
+<p>Сковороду разогрейте на среднем огне и смажьте растительным маслом. Вылейте половником немного теста и распределите по всей сковороде. Обжарьте блинчик с двух сторон до румяной корочки. При обжарке остальных блинов смазывать сковороду маслом не нужно.</p>
+</div>
+<div>
+<i>Шаг 7</i>
+<img src="https://static.1000.menu/img/content-v2/55/f3/9713/postnye-bliny-na-mineralke_1712492808_7_rtbp411_max.jpg" alt="">
+<p>Готовые блины на минералке сложите стопочкой друг на друга и подайте к столу. Приятного аппетита!</p>
+</div>
+</section>
+<article id="form">
+  <div class="container">
+    <h3 class="main-title"><i>Заполните форму</i></h3>
+      <form class="styled-form">
+        <fieldset class="form-fieldset">
+          <legend class="form-legend">Форма</legend>
+          <div class="form-row">
+            <label for="Name" class="form-label">Имя:</label>
+            <input name="login" type="text" placeholder="Введите ваше имя" class="form-input">
+          </div>
+          <div class="form-row">
+            <label for="Email" class="form-label">Почта:</label>
+            <input type="email" placeholder="Введите вашу почту" class="form-input">
+          </div>
+          <div class="form-row">
+            <label for="Telephone" class="form-label">Телефон:</label>
+            <input type="tel" placeholder="Введите ваш телефон" class="form-input">
+          </div>
+          <div class="form-row">
+            <label for="Password" class="form-label">Пароль:</label>
+            <input type="password" placeholder="Введите пароль" class="form-input">
+          </div>
+        <button class="styled-button">Отправить</button>
+      <div class="subscribe">
+        <label class="checkbox-label"><input type="checkbox">Подписаться на уведомления</label>
+      </div>
+  </div>
+</article>
+<article id="contacts">
+<addres>
+<a href="tel:79009009999"><img src="https://grizly.club/uploads/posts/2023-02/1675501245_grizly-club-p-telefon-ikonka-klipart-47.png" alt="позвонить по номеру" style="width:50px;height:50px"></a>
+<a href="mailto:academy@yandex-team.ru?subject=Hello!"><img src="https://iwiki.su/wp-content/uploads/2014/04/mail_icon_by_cortexcerebri-d90ks8v.png" alt="написать по почте" style="width:50px;height:50px"></a>
+<a href="https://wa.me/79999999999?text=Привет!%20Как дела?"><img src="https://grizly.club/uploads/posts/2023-01/1674680364_grizly-club-p-znachok-vatsap-klipart-51.png" alt="написать в Ватсап" style="width:50px;height:50px"></a>
+<a href="https://tg.me/8009009999?text=Привет"><img src="https://it-news.online/wp-content/uploads/2023/05/Telegram.png" alt="написать в Телеграм" style="width:50px;height:50px"></a>
+</addres>
+</article>
+</main>
+<footer>
+<small>Copyright &copy Lev Ryazhentsev</small>
+</footer>
+<aside>
+<div id="topNubex"><img src="https://www.pngall.com/wp-content/uploads/10/Bar-Chart-Vector-PNG-File.png" style="border: 0px"></div>
+</aside>
+</body>
+</html>
