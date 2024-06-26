@@ -1,0 +1,92 @@
+  //меню
+  document.addEventListener('DOMContentLoaded', () => {
+
+	// получаем все элементы с классом pushmenu
+	const pushmenu = document.getElementsByClassName('pushmenu');
+
+	// получаем элемент с классом hidden-overley
+	const hiddenOverley = document.querySelector('.hidden-overley');
+
+	// отслеживаем клик клика по оверлею
+	hiddenOverley.addEventListener('click', (e) => {
+		e.currentTarget.classList.toggle('show');
+		document.querySelector('.sidebar').classList.toggle('show');
+		document.querySelector('body').classList.toggle('sidebar-opened');
+		for( i=0; i < pushmenu.length; i++ ){
+				pushmenu[i].classList.toggle('open');
+		}
+	});
+
+
+	const pushmenuFunction = function() {
+		document.querySelector('.pushmenu').classList.toggle('open');
+		document.querySelector('.sidebar').classList.toggle('show');
+		document.querySelector('.hidden-overley').classList.toggle('show');
+		document.body.classList.toggle('sidebar-opened')
+	};
+
+	// Отслеживаем клики кнопок с классом pushmenu 
+	for( i=0; i < pushmenu.length; i++ ){
+		pushmenu[i].addEventListener('click', pushmenuFunction, false);
+	}
+
+	// Получим все родительские элементы в меню
+	const sidebarAccordeon = document.querySelectorAll('.sidebar .menu-parent-item a:first-child');
+	const accordeonFunction =  function() { 
+		this.parentNode.querySelector('ul').classList.toggle('show');
+		this.querySelector('i').classList.toggle('rotate');
+	}
+	// Отслеживаем клики родительских пунктов меню 
+	for( i=0; i < sidebarAccordeon.length; i++ ){
+		sidebarAccordeon[i].addEventListener('click', accordeonFunction, false);
+	}
+});
+
+//скрипт куки
+let container;
+let apply;
+
+const who = () => document.querySelector(".warning");
+
+const findElements = () => {
+  container = document.querySelector(".warning");
+  apply = container.querySelector(".warning__apply");
+};
+
+const hideContainer = () => {
+  container.classList.remove("warning--active");
+};
+
+const setCookie = () => {
+  document.cookie = "warning=true; max-age=2592000; path=/";
+};
+
+const onClick = (event) => {
+  event.preventDefault();
+  hideContainer();
+  setCookie();
+};
+
+const subscribe = () => {
+  apply.addEventListener("click", onClick);
+};
+
+const init = () => {
+  if (!who()) {
+    return;
+  }
+  findElements();
+  subscribe();
+};
+
+init();
+
+//смена темы
+document.getElementById('themeToggle').addEventListener('click', function() {
+    const currentTheme = document.body.className;
+    if (currentTheme === 'dark-theme') {
+        document.body.className = 'light-theme';
+    } else {
+        document.body.className = 'dark-theme';
+    }
+});
